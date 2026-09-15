@@ -151,3 +151,73 @@ ul{
     font-size: 16px;
     }
 }
+.pie-pagina {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 30px 5%;
+    background-color: var(--color-black);
+    color: var(--color-bg);
+}
+ 
+.titulo-pie {
+    font-family: var(--font-display);
+    font-size: 20px;
+}
+ 
+.lema-pie {
+    font-size: 14px;
+}
+ 
+.redes-pie {
+    display: flex;
+    gap: 20px;
+    a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+img{
+    width: 50px;
+    }
+}
+.derechos-pie {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #444444;
+}
+
+@media (max-width: 900px) {
+    .portada {
+        grid-template-columns: 1fr;
+    }
+ 
+    .pilares {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .cabecera {
+        flex-direction: column;
+        gap: 15px;
+    }
+ 
+    .menu-principal ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+    .texto-portada h1 {
+        font-size: 32px;
+    }
+ 
+    .pie-pagina {
+        flex-direction: column;
+        text-align: center;
+    }
+}
