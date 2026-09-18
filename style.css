@@ -206,6 +206,23 @@ ul {
     font-size: 15px;
     line-height: 1.6;
 }
+.bg-dark.text-white.pt-2.pb-2 {
+    background-color: #2b2c2e;
+}
+
+.fondo-modal {
+    background-color: #fcf2e2 !important;
+}
+
+.fondo-modal .form-control {
+    background-color: transparent !important;
+}
+
+.fondo-modal .form-control:focus {
+    background-color: transparent !important;
+    border-color: #7A2430 !important;
+    box-shadow: 0 0 0 0.25rem rgba(122, 36, 48, 0.25) !important;
+}
 @media (max-width: 900px) {
 
     .portada {
@@ -256,11 +273,7 @@ ul {
     }
 
     .card-img-top {
-        height: 230px;
-    }
-.bg-dark.text-white.pt-2.pb-2{
-    background-color: #2b2c2e"
- };
+        height: 230px;    }
 }
 /* @media (max-width: 600px) {
     .cabecera {
