@@ -27,4 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
             formularioContacto.reset();
         });
     }
+    const modalContactoEl = document.getElementById("modalContacto");
+    if (modalContactoEl) {
+        modalContactoEl.addEventListener("hide.bs.modal", function () {
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
+        });
+    }
 });
