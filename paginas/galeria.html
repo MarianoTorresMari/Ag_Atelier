@@ -1,332 +1,548 @@
 <!DOCTYPE html>
-<html lang="es_AR">
+<html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paloma Lucas, Chaile Elio Federico, Torres Mari Mariano">
-    <meta name="description" content="Galería de productos de AG Atelier">
-    <meta name="keywords" content="Pulseras, aros, aritos, collares, oro, plata">
+    <meta name="description" content="Explorá la colección de AG Atelier: pulseras, aritos, anillos, collares y accesorios seleccionados en Santiago del Estero.">
+    <meta name="keywords" content="AG Atelier, pulseras, aritos, anillos, collares, accesorios, Santiago del Estero">
+    <meta name="robots" content="index, follow">
     <link rel="shortcut icon" href="../img/age_logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>Galería | AG Atelier</title>
 </head>
 
 <body id="inicio">
 
-<header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/age_logo.png" alt="Logo AG Atelier">
-            </a>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/age_logo.png" alt="Logo de AG Atelier">
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
+                    aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/paginas/sobrenosotros.html">Sobre Nosotros</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalContacto" role="button">Contacto
-                        </a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#pulseras">Pulseras</a></li>
-                        <li><a class="dropdown-item" href="#aritos">Aritos</a></li>
-                        <li><a class="dropdown-item" href="#anillos">Anillos</a></li>
-                        <li><a class="dropdown-item" href="#collares">Collares</a></li>
-                        <li><a class="dropdown-item" href="#maquillaje">Maquillaje</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#pulseras">Pulseras</a></li>
+                                <li><a class="dropdown-item" href="#aritos">Aritos</a></li>
+                                <li><a class="dropdown-item" href="#anillos">Anillos</a></li>
+                                <li><a class="dropdown-item" href="#collares">Collares</a></li>
+                                <li><a class="dropdown-item" href="#maquillaje">Maquillaje</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./galeria.html">
+                                Galería
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobrenosotros.html">
+                                Sobre Nosotros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="btn btn-dark ms-lg-2 px-4" type="button" data-bs-toggle="modal"
+                                data-bs-target="#modalContacto">
+                                Contacto
+                            </button>
+                        </li>
+
                     </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="galeria.html">Galería</a>
-                    </li>
-                </ul>
-
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" id="buscador" name="buscador" autocomplete="off" placeholder="Busca tu producto" aria-label="Buscar">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-<main>
-    <section class="galeria-inicio">
-        <div class="container text-center">
-            <p class="galeria-marca">AG ATELIER</p>
-            <h1>Nuestra colección</h1>
-            <p>Explorá nuestros accesorios y encontrá ese detalle especial para acompañar tu estilo.</p>
-            <div class="categorias">
-                <a href="#pulseras">Pulseras</a>
-                <a href="#aritos">Aritos</a>
-                <a href="#anillos">Anillos</a>
-                <a href="#collares">Collares</a>
-                <a href="#maquillaje">Maquillaje</a>
+    <main>
+        <section class="py-5 border-bottom">
+            <div class="container">
+                <div class="bg-dark text-white rounded-4 shadow p-4 p-md-5 text-center">
+
+                    <p class="text-uppercase small fw-semibold text-white-50 mb-2">
+                        AG Atelier
+                    </p>
+
+                    <h1 class="display-4 fw-semibold mb-3">
+                        Nuestra colección
+                    </h1>
+
+                    <p class="lead text-white-50 mx-auto mb-4">
+                        Explorá nuestros accesorios y encontrá ese detalle que mejor acompañe tu estilo.
+                    </p>
+
+                    <div class="d-flex justify-content-center flex-wrap gap-2">
+                        <a href="#pulseras" class="btn btn-outline-light rounded-pill px-4">
+                            Pulseras
+                        </a>
+
+                        <a href="#aritos" class="btn btn-outline-light rounded-pill px-4">
+                            Aritos
+                        </a>
+
+                        <a href="#anillos" class="btn btn-outline-light rounded-pill px-4">
+                            Anillos
+                        </a>
+
+                        <a href="#collares" class="btn btn-outline-light rounded-pill px-4">
+                            Collares
+                        </a>
+
+                        <a href="#maquillaje" class="btn btn-outline-light rounded-pill px-4">
+                            Maquillaje
+                        </a>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="seccion-productos" id="pulseras">
+        </section>
+
+        <section class="py-5" id="pulseras">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-end border-bottom pb-3 mb-4">
+                    <div>
+                        <span class="badge text-bg-dark mb-2">Colección</span>
+                        <h2 class="display-6 mb-1">Pulseras</h2>
+                        <p class="text-secondary mb-0">Diseños para combinar y usar todos los días.</p>
+                    </div>
+                    <span class="text-secondary d-none d-md-block">1 producto</span>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article class="card h-100 border-0 shadow rounded-4 overflow-hidden producto-card">
+                            <div class="position-relative">
+                                <img loading="lazy" src="../img/pulsera4.png" class="card-img-top producto-img"
+                                    alt="Pulsera de piedras">
+                                <span class="badge text-bg-dark position-absolute top-0 start-0 m-3">Pulseras</span>
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title fs-4 mb-1">Pulsera de piedras</h3>
+                                <p class="text-secondary small mb-3">Un detalle simple para combinar con distintos
+                                    estilos.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto mb-3">
+                                    <span class="text-secondary small">Precio</span>
+                                    <p class="precio fw-bold fs-5 mb-0">$10.000</p>
+                                </div>
+                                <button type="button" class="btn btn-dark w-100 btn-agregar">Agregar al carrito</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light" id="aritos">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-end border-bottom pb-3 mb-4">
+                    <div>
+                        <span class="badge text-bg-dark mb-2">Colección</span>
+                        <h2 class="display-6 mb-1">Aritos</h2>
+                        <p class="text-secondary mb-0">Modelos simples para completar cualquier look.</p>
+                    </div>
+                    <span class="text-secondary d-none d-md-block">3 productos</span>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article class="card h-100 border-0 shadow rounded-4 overflow-hidden producto-card">
+                            <div class="position-relative">
+                                <img loading="lazy" src="../img/aritos_dor.png" class="card-img-top producto-img" alt="Aritos dorados">
+                                <span class="badge text-bg-dark position-absolute top-0 start-0 m-3">Aritos</span>
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title fs-4 mb-1">Aritos dorados</h3>
+                                <p class="text-secondary small mb-3">Un accesorio versátil para acompañar tu estilo.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto mb-3">
+                                    <span class="text-secondary small">Precio</span>
+                                    <p class="precio fw-bold fs-5 mb-0">$8.500</p>
+                                </div>
+                                <button type="button" class="btn btn-dark w-100 btn-agregar">Agregar al carrito</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article class="card h-100 border-0 shadow rounded-4 overflow-hidden producto-card">
+                            <div class="position-relative">
+                                <img loading="lazy" src="../img/aritos1.png" class="card-img-top producto-img" alt="Aritos clásicos">
+                                <span class="badge text-bg-dark position-absolute top-0 start-0 m-3">Aritos</span>
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title fs-4 mb-1">Aritos clásicos</h3>
+                                <p class="text-secondary small mb-3">Un diseño clásico para usar todos los días.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto mb-3">
+                                    <span class="text-secondary small">Precio</span>
+                                    <p class="precio fw-bold fs-5 mb-0">$9.500</p>
+                                </div>
+                                <button type="button" class="btn btn-dark w-100 btn-agregar">Agregar al carrito</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article class="card h-100 border-0 shadow rounded-4 overflow-hidden producto-card">
+                            <div class="position-relative">
+                                <img loading="lazy" src="../img/aritos2.png" class="card-img-top producto-img" alt="Aritos delicados">
+                                <span class="badge text-bg-dark position-absolute top-0 start-0 m-3">Aritos</span>
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title fs-4 mb-1">Aritos delicados</h3>
+                                <p class="text-secondary small mb-3">Una opción delicada para un estilo más sutil.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto mb-3">
+                                    <span class="text-secondary small">Precio</span>
+                                    <p class="precio fw-bold fs-5 mb-0">$7.500</p>
+                                </div>
+                                <button type="button" class="btn btn-dark w-100 btn-agregar">Agregar al carrito</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="anillos">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-end border-bottom pb-3 mb-4">
+                    <div>
+                        <span class="badge text-bg-dark mb-2">Colección</span>
+                        <h2 class="display-6 mb-1">Anillos</h2>
+                        <p class="text-secondary mb-0">Detalles pequeños que hacen la diferencia.</p>
+                    </div>
+                    <span class="text-secondary d-none d-md-block">1 producto</span>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article class="card h-100 border-0 shadow rounded-4 overflow-hidden producto-card">
+                            <div class="position-relative">
+                                <img loading="lazy" src="../img/anillo1.jpg" class="card-img-top producto-img" alt="Anillo">
+                                <span class="badge text-bg-dark position-absolute top-0 start-0 m-3">Anillos</span>
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title fs-4 mb-1">Anillo</h3>
+                                <p class="text-secondary small mb-3">Un detalle elegante para completar tu look.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto mb-3">
+                                    <span class="text-secondary small">Precio</span>
+                                    <p class="precio fw-bold fs-5 mb-0">$8.500</p>
+                                </div>
+                                <button type="button" class="btn btn-dark w-100 btn-agregar">Agregar al carrito</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light" id="collares">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-end border-bottom pb-3 mb-4">
+                    <div>
+                        <span class="badge text-bg-dark mb-2">Colección</span>
+                        <h2 class="display-6 mb-1">Collares</h2>
+                        <p class="text-secondary mb-0">Piezas pensadas para distintos estilos.</p>
+                    </div>
+                    <span class="text-secondary d-none d-md-block">1 producto</span>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article class="card h-100 border-0 shadow rounded-4 overflow-hidden producto-card">
+                            <div class="position-relative">
+                                <img loading="lazy" src="../img/collar1.png" class="card-img-top producto-img" alt="Collar blanco">
+                                <span class="badge text-bg-dark position-absolute top-0 start-0 m-3">Collares</span>
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title fs-4 mb-1">Collar blanco</h3>
+                                <p class="text-secondary small mb-3">Una pieza pensada para combinar con distintos
+                                    estilos.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto mb-3">
+                                    <span class="text-secondary small">Precio</span>
+                                    <p class="precio fw-bold fs-5 mb-0">$14.000</p>
+                                </div>
+                                <button type="button" class="btn btn-dark w-100 btn-agregar">Agregar al carrito</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="maquillaje">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-end border-bottom pb-3 mb-4">
+                    <div>
+                        <span class="badge text-bg-dark mb-2">Colección</span>
+                        <h2 class="display-6 mb-1">Maquillaje</h2>
+                        <p class="text-secondary mb-0">Una selección de productos para complementar tu estilo.</p>
+                    </div>
+                    <span class="text-secondary d-none d-md-block">1 producto</span>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <article class="card h-100 border-0 shadow rounded-4 overflow-hidden producto-card">
+                            <div class="position-relative">
+                                <img loading="lazy" src="../img/maquillaje1.png" class="card-img-top producto-img"
+                                    alt="Producto de maquillaje">
+                                <span class="badge text-bg-dark position-absolute top-0 start-0 m-3">Maquillaje</span>
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title fs-4 mb-1">Producto de maquillaje</h3>
+                                <p class="text-secondary small mb-3">Una opción seleccionada para complementar tu
+                                    estilo.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto mb-3">
+                                    <span class="text-secondary small">Precio</span>
+                                    <p class="precio fw-bold fs-5 mb-0">$8.500</p>
+                                </div>
+                                <button type="button" class="btn btn-dark w-100 btn-agregar">Agregar al carrito</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- CONTACTO -->
+    <section class="py-5">
         <div class="container">
-            <div class="titulo-seccion">
-                <h2>Pulseras</h2>
-                <p>Diseños para combinar y usar todos los días.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <article class="producto-card">
-                        <img src="../img/pulsera4.png" alt="Pulsera de piedras">
-                        <div class="producto-info">
-                            <h3>Pulsera de piedras</h3>
-                            <p class="precio">$10.000</p>
-                            <button type="button" class="btn-agregar">Agregar</button>
-                        </div>
-                    </article>
+            <div class="row align-items-center g-4 py-4 border-top border-bottom">
+    
+                <div class="col-12 col-lg-8 text-center text-lg-start">
+                    <p class="text-uppercase small fw-semibold galeria-marca mb-2">
+                        ¿Necesitás ayuda?
+                    </p>
+    
+                    <h2 class="display-6 mb-2">
+                        ¿Buscás algo en particular?
+                    </h2>
+    
+                    <p class="text-secondary mb-0">
+                        Consultanos por disponibilidad o por algún accesorio que estés buscando.
+                    </p>
                 </div>
+    
+                <div class="col-12 col-lg-4 text-center text-lg-end">
+                    <button type="button" class="btn btn-dark btn-lg px-4" data-bs-toggle="modal"
+                        data-bs-target="#modalContacto">
+                        Contactanos
+                    </button>
+                </div>
+    
             </div>
         </div>
     </section>
-    <section class="seccion-productos fondo-suave" id="aritos">
-        <div class="container">
-            <div class="titulo-seccion">
-                <h2>Aritos</h2>
-                <p>Modelos simples para completar cualquier look.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <article class="producto-card">
-                        <img src="../img/aritos_dor.png" alt="Aritos dorados">
-                        <div class="producto-info">
-                            <h3>Aritos dorados</h3>
-                            <p class="precio">$8.500</p>
-                            <button type="button" class="btn-agregar">Agregar</button>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <article class="producto-card">
-                        <img src="../img/aritos1.png" alt="Aritos clásicos">
-                        <div class="producto-info">
-                            <h3>Aritos clásicos</h3>
-                            <p class="precio">$9.500</p>
-                            <button type="button" class="btn-agregar">Agregar</button>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <article class="producto-card">
-                        <img src="../img/aritos2.png" alt="Aritos delicados">
-                        <div class="producto-info">
-                            <h3>Aritos delicados</h3>
-                            <p class="precio">$7.500</p>
-                            <button type="button" class="btn-agregar">Agregar</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="seccion-productos" id="anillos">
-        <div class="container">
-            <div class="titulo-seccion">
-                <h2>Anillos</h2>
-                <p>Detalles pequeños que hacen la diferencia.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <article class="producto-card">
-                        <img src="../img/aritos_dor.png" alt="Anillo">
-                        <div class="producto-info">
-                            <h3>Anillo</h3>
-                            <p class="precio">$8.500</p>
-                            <button type="button" class="btn-agregar">Agregar</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="seccion-productos fondo-suave" id="collares">
-        <div class="container">
-            <div class="titulo-seccion">
-                <h2>Collares</h2>
-                <p>Piezas pensadas para distintos estilos.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <article class="producto-card">
-                        <img src="../img/collar1.png" alt="Collar blanco">
-                        <div class="producto-info">
-                            <h3>Collar blanco</h3>
-                            <p class="precio">$14.000</p>
-                            <button type="button" class="btn-agregar">Agregar</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="seccion-productos" id="maquillaje">
-        <div class="container">
-            <div class="titulo-seccion">
-                <h2>Maquillaje</h2>
-                <p>Una selección de productos para complementar tu estilo.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <article class="producto-card">
-                        <img src="../img/aritos_dor.png" alt="Producto de maquillaje">
-                        <div class="producto-info">
-                            <h3>Producto de maquillaje</h3>
-                            <p class="precio">$8.500</p>
-                            <button type="button" class="btn-agregar">Agregar</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+    </main>
 
-<footer class="bg-dark text-white pt-2 pb-2">
-    <div class="container text-center text-md-start">
-        <div class="row text-center text-md-start">
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
 
-            <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 fw-bold">AG Atelier</h5>
-                <p class="text-white-50">
-                    Detalles que enamoran. Accesorios seleccionados especialmente para acompañar tu estilo.
-                </p>
-            </div>
+            <div class="row g-4">
 
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <div class="mb-4">
-                    <h5 class="text-uppercase mb-3 fw-bold">Seguinos</h5>
+                <!-- MARCA -->
+                <div class="col-12 col-md-5">
+                    <h5 class="text-uppercase fw-bold mb-3">AG Atelier</h5>
 
-                    <a href="https://www.instagram.com/ag_atelier4/" target="_blank" class="text-white text-decoration-none d-flex align-items-center justify-content-center justify-content-md-start mb-4">
-                        <img src="../img/ig_logo.png" alt="Instagram" width="25" class="me-2">
+                    <p class="text-white-50 mb-3">
+                        Accesorios seleccionados especialmente para acompañar tu estilo y darle un detalle diferente a
+                        cada momento.
+                    </p>
+
+                    <span class="small text-white-50">
+                        Santiago del Estero
+                    </span>
+                </div>
+
+
+                <!-- NAVEGACIÓN -->
+                <div class="col-6 col-md-3 ms-md-auto">
+                    <h5 class="fs-6 text-uppercase fw-bold mb-3">
+                        Navegación
+                    </h5>
+
+                    <div class="d-flex flex-column gap-2">
+                        <a href="../index.html" class="text-white-50 text-decoration-none">
+                            Inicio
+                        </a>
+
+                        <a href="./galeria.html" class="text-white-50 text-decoration-none">
+                            Galería
+                        </a>
+
+                        <a href="./sobrenosotros.html" class="text-white-50 text-decoration-none">
+                            Sobre Nosotros
+                        </a>
+
+                        <a href="#" class="text-white-50 text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#modalContacto">
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- REDES -->
+                <div class="col-6 col-md-3">
+                    <h5 class="fs-6 text-uppercase fw-bold mb-3">
+                        Seguinos
+                    </h5>
+
+                    <a href="https://www.instagram.com/ag_atelier4/" target="_blank" rel="noopener noreferrer"
+                        class="text-white text-decoration-none d-flex align-items-center mb-3">
+
+                        <img src="../img/ig_logo.png" alt="Instagram de AG Atelier" width="25" class="me-2">
+
                         <span>@ag_atelier4</span>
                     </a>
+
+                    <p class="small text-white-50 mb-0">
+                        Descubrí novedades y nuevos ingresos.
+                    </p>
                 </div>
 
-                <div class="bloque-ubicacion">
-                    <h5 class="text-uppercase mb-3 fw-bold">Encontranos en</h5>
-                    <a
-                        class="text-white text-decoration-none d-flex align-items-center justify-content-center justify-content-md-start">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/059/493/079/small/white-location-icon-free-png.png"
-                            alt="Google Maps" width="35" class="me-2" />
-                        <span class="texto-ubicacion">Santiago del Estero</span>
-                    </a>
-                </div>
             </div>
+
+
+            <hr class="my-4 border-secondary opacity-50">
+
+
+            <div class="row align-items-center g-2">
+
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">
+                        &copy; 2026 AG Atelier. Todos los derechos reservados.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <span class="small text-white-50">
+                        Joyería · Accesorios · Estilo
+                    </span>
+                </div>
+
+            </div>
+
         </div>
+    </footer>
+    <div id="aviso-carrito" class="aviso-carrito"></div>
+    <button type="button" class="btn-carrito" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+        🛒 <span id="contador-carrito">0</span>
+    </button>
+    <!-- Este es el modal del carrito -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-        <hr class="mb-3 mt-2 border-secondary opacity-50">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCarritoLabel">Tu pedido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
 
-        <div class="row align-items-center">
-            <div class="col-12 text-center">
-                <p class="small mb-0 text-white-50">
-                    &copy; 2026 AG Atelier. Todos los derechos reservados.
-                </p>
+                <div class="modal-body">
+                    <div id="lista-carrito">
+                        <p>Tu carrito está vacío.</p>
+                    </div>
+
+                    <hr>
+
+                    <p class="fw-bold mb-0">
+                        Total: $<span id="total-carrito">0</span>
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" id="vaciar-carrito">
+                        Vaciar carrito
+                    </button>
+
+                    <button type="button" class="btn btn-success" id="enviar-whatsapp">
+                        Enviar por WhatsApp
+                    </button>
+                </div>
+
             </div>
         </div>
     </div>
-</footer>
-<div id="aviso-carrito" class="aviso-carrito"></div>
-<button type="button" class="btn-carrito" data-bs-toggle="modal" data-bs-target="#modalCarrito">
-    🛒 <span id="contador-carrito">0</span>
-</button>
-<!-- Este es el modal del carrito -->
-<div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalCarritoLabel">Tu pedido</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </div>
-
-            <div class="modal-body">
-                <div id="lista-carrito">
-                    <p>Tu carrito está vacío.</p>
-                </div>
-
-                <hr>
-
-                <p class="fw-bold mb-0">
-                    Total: $<span id="total-carrito">0</span>
-                </p>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" id="vaciar-carrito">
-                    Vaciar carrito
-                </button>
-
-                <button type="button" class="btn btn-success" id="enviar-whatsapp">
-                    Enviar por WhatsApp
-                </button>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- Modal de Contacto -->
+    <!-- Modal de Contacto -->
   <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content border-0 shadow fondo-modal">
         <div class="modal-header bg-dark text-white">
-          <h1 class="modal-title fs-5 text-uppercase fw-bold" id="modalContactoLabel">Contactanos</h1>
+          <h2 class="modal-title fs-5 fw-bold" id="modalContactoLabel">Contactanos</h2>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
-        <div class="modal-body">
+
+        <div class="modal-body p-4">
           <form id="formularioContacto">
             <div class="mb-3">
-              <label for="nombre" class="form-label fw-bold">Nombre y Apellido</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name" required minlength="4" />
+              <label for="nombre" class="form-label fw-semibold">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name"
+                required minlength="4" maxlength="60" placeholder="Nombre y apellido">
             </div>
+
             <div class="mb-3">
-              <label for="email" class="form-label fw-bold">Email</label>
-              <input type="email" class="form-control" id="email" name="email" autocomplete="email" required placeholder="ejemplo@ejemplo.com" />
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                required placeholder="ejemplo@ejemplo.com">
             </div>
+
             <div class="mb-3">
-              <label for="telefono" class="form-label fw-bold">Teléfono</label>
-              <input type="tel" class="form-control" id="telefono" name="telefono" autocomplete="tel" required pattern="[0-9]{10}" maxlength="10"
-                title="Por favor, ingresá exactamente 10 números" placeholder="Ej: 3851234567" />
-              <div class="form-text" style="font-size: 0.85rem">Ingresá 10 números, sin espacios ni guiones.</div>
+              <label for="telefono" class="form-label fw-semibold">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" autocomplete="tel"
+                inputmode="numeric" required pattern="[0-9]{10}" minlength="10" maxlength="10"
+                title="Ingresá exactamente 10 números" placeholder="Ej: 3851234567">
+              <div class="form-text">Ingresá 10 números, sin espacios ni guiones.</div>
             </div>
+
             <div class="mb-3">
-              <label for="mensaje" class="form-label fw-bold">Tu Consulta</label>
-              <textarea class="form-control" id="mensaje" rows="3" required
-                placeholder="Escribinos tu duda aqui..."></textarea>
+              <label for="mensaje" class="form-label fw-semibold">Tu consulta</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
+                required minlength="10" maxlength="500" placeholder="Escribinos tu consulta..."></textarea>
             </div>
           </form>
         </div>
+
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="submit" form="formularioContacto" class="btn btn-dark text-uppercase">Enviar mensaje</button>
+          <button type="submit" form="formularioContacto" class="btn btn-dark">Enviar mensaje</button>
         </div>
       </div>
     </div>
   </div>
-<a href="#inicio" class="btn-arriba" aria-label="Volver arriba">↑</a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="/js/galeria.js"></script>
-<script src="/js/contacto.js"></script>
+  <a href="#inicio" class="btn-arriba" aria-label="Volver arriba">↑</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../js/galeria.js"></script>
+    <script src="../js/contacto.js"></script>
 
 </body>
+
 </html>
