@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             boton.textContent="✓ Agregado";
             boton.classList.add("agregado");
             setTimeout(()=>{
-                boton.textContent="Agregar";
+                boton.textContent="Agregar al carrito";
                 boton.classList.remove("agregado");
             },1000);
         });
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             alert("El carrito está vacío.");
             return;
         }
-        let mensaje="Hola, quiero realizar este pedido en AG Atelier:\n\n";
+        let mensaje="Hola AG Atelier, quiero realizar este pedido :\n\n";
         let total=0;
         carrito.forEach(producto=>{
             const subtotal=producto.precio*producto.cantidad;
