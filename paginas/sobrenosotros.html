@@ -362,27 +362,28 @@
           <form id="formularioContacto">
             <div class="mb-3">
               <label for="nombre" class="form-label fw-semibold">Nombre y Apellido</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name" required
-                minlength="4">
+              <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name"
+                required minlength="4" maxlength="60" placeholder="Nombre y apellido">
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label fw-semibold">Email</label>
-              <input type="email" class="form-control" id="email" name="email" autocomplete="email" required
-                placeholder="ejemplo@ejemplo.com">
+              <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                required placeholder="ejemplo@ejemplo.com">
             </div>
 
             <div class="mb-3">
               <label for="telefono" class="form-label fw-semibold">Teléfono</label>
-              <input type="tel" class="form-control" id="telefono" name="telefono" autocomplete="tel" required
-                pattern="[0-9]{10}" maxlength="10" placeholder="Ej: 3851234567">
+              <input type="tel" class="form-control" id="telefono" name="telefono" autocomplete="tel"
+                inputmode="numeric" required pattern="[0-9]{10}" minlength="10" maxlength="10"
+                title="Ingresá exactamente 10 números" placeholder="Ej: 3851234567">
               <div class="form-text">Ingresá 10 números, sin espacios ni guiones.</div>
             </div>
 
             <div class="mb-3">
               <label for="mensaje" class="form-label fw-semibold">Tu consulta</label>
-              <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required
-                placeholder="Escribinos tu consulta..."></textarea>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
+                required minlength="10" maxlength="500" placeholder="Escribinos tu consulta..."></textarea>
             </div>
           </form>
         </div>
